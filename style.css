@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+@media(max-width:670px){
+    .image{
+        width:1px;
+        display:none;
+    }
+    .container{
+        
+        padding-left: 200px;
+        height: 100%;
+        padding-top: 30px;
+        width:100%;     
+    }
+    .Registration-box{
+        width:100vw;
+    }
+}
+@media(max-width:400px){
+    h2{
+        font-size: 18px;
+
+    }
+    .container{
+        width:100vw;
+        padding:20px;
+    }
+    .Registration-box{
+        width:100%;
+    }
+
+}
+
+html,body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-family:"Inconsolata",monospace;
+    display:flex;
+    justify-content: center;
+    background-color: #141313;
+    
+}
+.container{
+    width:120%;
+    height:95%;
+    position: absolute;
+    top:7%;
+    left:26%;
+    display: flex;
+    
+    padding-top: 10px;
+    padding-bottom: 50px;
+    
+}
+
+
+.Registration-box{
+    padding:1%;
+    padding-left: 4.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:40%;
+    padding-top: 4%;
+    
+    background-color: #2e2e2e;
+
+}
+
+.form-data{
+    text-align: center;
+    
+}
+/*
+h2{
+    margin-bottom:30px;
+    font-weight: 800;
+    font-size:25px;
+    color:white;
+    
+    margin-left:-70px;
+}*/
+
+.fields{
+    position: relative;
+    width:100%;
+    margin-bottom: 40px;
+    overflow:hidden;
+    display: flex;
+      
+}
+
+.sfield label{
+    position: absolute;
+    left:48%;
+}
+/*
+label:after
+{
+    color: rgb(255,0,0);
+    content: " *";
+}*/
+.sfield input{
+    position: absolute;
+    left:48%
+}
+
+
+input[type="text"],input[type="password"],input[type="email"]{
+    border:none;
+    border-bottom: 1px solid white;
+    padding: 5px;
+    outline: none;
+    color: white;
+    width:220px;
+    background: none;
+    margin-left:17px;
+    
+}
+input[type="tel"]{
+
+    border: none;
+    color: white;
+    border-bottom: 1.5px solid white;
+    background: none;
+    width:215px;
+    margin-top: 9px;
+    margin-left:29px;
+    outline: none;
+
+}
+input[type="tel"]:active{
+    background:none;
+
+}
+input[type="email"]:active{
+    background:none;
+
+}
+label{
+    position:absolute;
+    top:0;
+    left: 0;
+    padding-left: 45px;
+    pointer-events: none;
+    color:white;
+    margin-left:-5%;
+    margin-top:5px;
+    
+}
+pre{
+    font-size:17px;
+     font-family:"Inconsolata",monospace;
+}
+
+.fas{
+    position:absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    color:white;
+    margin-top:10px;
+    
+}
+.fa-mobile-alt{
+    margin-left:51%;
+}
+input[type="text"]:focus ~label,input[type="password"]:focus ~label,input[type="email"]:focus ~label,
+input[type="text"]:valid ~label,input[type="password"]:valid ~label,input[type="email"]:valid ~label{
+   display: none;
+}
+input[type="tel"]:valid ~label,input[type="tel"]:focus ~label{
+    display: none;
+ }
+ .radio{
+     margin-left:8px;
+     margin-right: 3px;
+     margin-top: 12px;
+ }
+ .radio-text{
+     margin-top: 10px;
+ }
+ .city input {
+     margin-top: -2%;
+     margin-left:68px;
+     width: 200px;
+ }
+ .city label{
+     margin-top:1px;
+     margin-left:47%;
+   
+ }
+ .fa-city{
+    margin-left:51%;
+    margin-right: 10px;
+    
+}
+ input[type="text"]:active{
+    background:none;
+
+}
+select{
+    background: none;
+    outline: none;
+    margin-right:45px;
+    margin-left:25px;
+    border-radius: 4px;
+    width: 180px;
+    height:28px;
+    border-color: white;
+}
+
+option{
+    background:#2e2e2e;
+  
+}
+.select-text{
+    margin-top:7px;
+}
+.country{
+    margin-left:10px;
+}
+.state{
+    margin-left:10px;
+}
+input[type="submit"]{
+    border:none;
+    background: none;
+    cursor:pointer;
+    color:white;
+    background-color: #555555;;
+    border-radius: 25px;
+    
+    outline: none;
+    margin-top:-75px;
+    margin-left:250px;
+    width:40%;
+    height: 8%;
+    font-size:25px;
+    font-weight:700;
+
+
+}
+
+.last{
+    margin-top:10%;
+}
+
